@@ -14,8 +14,8 @@ DATABASES = {
         'NAME': 'slate_blog',
         'USER': 'slate_blog',
         'PASSWORD': 'slate_blog',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': 'slate-pgres-do-user-464771-0.b.db.ondigitalocean.com',
+        'PORT': '25060',
     }
 }
 
