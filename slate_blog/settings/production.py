@@ -9,7 +9,7 @@ except ImportError:
     pass
 
 DATABASES = {
-    'default': dj_database_url.parse("postgresql://doadmin:zajUk66uWoSCBrCr@slate-pgres-do-user-464771-0.b.db.ondigitalocean.com:25060/defaultdb?sslmode=require")
+    'default': dj_database_url.parse("postgresql://slate_blog:AVNS_qsIEujR4hnyYewnP_IZ@slate-pgres-do-user-464771-0.b.db.ondigitalocean.com:25060/slate_blog?sslmode=require")
 }
 
 ALLOWED_HOSTS = ["*"]
