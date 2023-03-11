@@ -24,6 +24,8 @@ SECRET_KEY = 'django-insecure-xf02$hf0(rmgect((ee5pxj(##y40^_1+i9xc3zyc%2=nn_@s-
 # Application definition
 
 INSTALLED_APPS = [
+    'wagtail.contrib.modeladmin',  # Don't repeat if it's there already
+    'wagtailmenus',
     'wagtail.api.v2',
     "rest_framework",
     "blog",
@@ -76,6 +78,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "wagtailmenus.context_processors.wagtailmenus",
             ],
         },
     },

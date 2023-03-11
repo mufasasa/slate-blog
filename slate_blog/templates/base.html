@@ -1,4 +1,7 @@
 {% load static wagtailcore_tags wagtailuserbar %}
+{% load menu_tags %}
+{% main_menu max_levels=2 %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +36,7 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
-
+        
         {% block content %}{% endblock %}
 
         {# Global javascript #}
