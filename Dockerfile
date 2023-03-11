@@ -49,8 +49,8 @@ USER wagtail
 RUN python manage.py collectstatic --noinput --clear
 
 # python menus
-CMD python manage.py migrate wagtailmenus
-CMD python manage.py autopopulate_main_menus --add-home-links=True
+# CMD python manage.py migrate wagtailmenus
+# CMD python manage.py autopopulate_main_menus --add-home-links=True
 
 # Runtime command that executes when "docker run" is called, it does the
 # following:
